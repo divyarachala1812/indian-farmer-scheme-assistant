@@ -1,0 +1,53 @@
+{
+  "sources": [
+    {
+      "id": "pm_kisan",
+      "title": "PM-KISAN Operational Guidelines (revised 29 March 2020)",
+      "publisher": "Ministry of Agriculture and Farmers Welfare, Government of India",
+      "url": "https://pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines%28English%29.pdf",
+      "format": "pdf"
+    },
+    {
+      "id": "pmfby",
+      "title": "Pradhan Mantri Fasal Bima Yojana Revised Operational Guidelines",
+      "publisher": "Ministry of Agriculture and Farmers Welfare, Government of India",
+      "url": "https://pmfby.gov.in/pdf/Revised_Operational_Guidelines.pdf",
+      "format": "pdf"
+    },
+    {
+      "id": "soil_health_frequency",
+      "title": "Soil Health Card FAQ: issue cycle",
+      "publisher": "Department of Agriculture and Farmers Welfare, Government of India",
+      "url": "https://support.soilhealth.dac.gov.in/kb/faq.php?id=40",
+      "format": "html"
+    },
+    {
+      "id": "soil_health_parameters",
+      "title": "Soil Health Card FAQ: card parameters",
+      "publisher": "Department of Agriculture and Farmers Welfare, Government of India",
+      "url": "https://support.soilhealth.dac.gov.in/kb/faq.php?id=38",
+      "format": "html"
+    },
+    {
+      "id": "soil_health_sampling",
+      "title": "Soil Health Card FAQ: field sample collection",
+      "publisher": "Department of Agriculture and Farmers Welfare, Government of India",
+      "url": "https://support.soilhealth.dac.gov.in/kb/faq.php?id=44",
+      "format": "html"
+    },
+    {
+      "id": "enam",
+      "title": "National Agriculture Market (e-NAM): One Nation One Market explainer",
+      "publisher": "Press Information Bureau, Ministry of Agriculture and Farmers Welfare",
+      "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2023/apr/doc2023414181301.pdf",
+      "format": "pdf"
+    },
+    {
+      "id": "kcc",
+      "title": "Master Circular - Kisan Credit Card Scheme",
+      "publisher": "Reserve Bank of India",
+      "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=11325",
+      "format": "html"
+    }
+  ]
+}

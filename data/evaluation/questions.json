@@ -1,0 +1,20 @@
+[
+  {"id":"q01","query":"What financial benefit is provided under PM-KISAN?","expected_source":"pm_kisan","expected_terms":["financial benefit","6000"]},
+  {"id":"q02","query":"Who identifies eligible farmer families for PM-KISAN?","expected_source":"pm_kisan","expected_terms":["state","beneficiaries"]},
+  {"id":"q03","query":"How is PM-KISAN money transferred to beneficiaries?","expected_source":"pm_kisan","expected_terms":["bank account","direct benefit"]},
+  {"id":"q04","query":"What premium does a farmer pay for Kharif crops under PMFBY?","expected_source":"pmfby","expected_terms":["kharif","2"]},
+  {"id":"q05","query":"Which risks or crop losses are covered by PMFBY?","expected_source":"pmfby","expected_terms":["crop loss","risk"]},
+  {"id":"q06","query":"How should a farmer report a localised crop loss under crop insurance?","expected_source":"pmfby","expected_terms":["loss","intimation"]},
+  {"id":"q07","query":"How often does a farmer receive a Soil Health Card?","expected_source":"soil_health_frequency","expected_terms":["3 years","cycle"]},
+  {"id":"q08","query":"Which soil parameters are shown on a Soil Health Card?","expected_source":"soil_health_parameters","expected_terms":["12 parameters","ph"]},
+  {"id":"q09","query":"How are soil samples collected from a farmer's field?","expected_source":"soil_health_sampling","expected_terms":["soil samples","four corners"]},
+  {"id":"q10","query":"How does e-NAM connect agricultural mandis into a national market?","expected_source":"enam","expected_terms":["mandis","online"]},
+  {"id":"q11","query":"Which agency implements the e-NAM scheme?","expected_source":"enam","expected_terms":["sfac","implementing"]},
+  {"id":"q12","query":"How does transparent e-auction on e-NAM support better price discovery?","expected_source":"enam","expected_terms":["price discovery","farmer"]},
+  {"id":"q13","query":"What is the purpose of a Kisan Credit Card?","expected_source":"kcc","expected_terms":["agriculture inputs","production needs"]},
+  {"id":"q14","query":"Which activities can be financed through KCC?","expected_source":"kcc","expected_terms":["crop","post-harvest"]},
+  {"id":"q15","query":"Who is eligible for a Kisan Credit Card loan?","expected_source":"kcc","expected_terms":["farmers","tenant farmers"]},
+  {"id":"q16","query":"फसल बीमा में खरीफ प्रीमियम कितना है?","expected_source":"pmfby","expected_terms":["kharif","2"]},
+  {"id":"q17","query":"मिट्टी की जांच वाला कार्ड कितने साल में मिलता है?","expected_source":"soil_health_frequency","expected_terms":["3 years","cycle"]},
+  {"id":"q18","query":"mandi me online bechne ke liye eNAM kya hai?","expected_source":"enam","expected_terms":["online","mandi"]}
+]

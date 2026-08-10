@@ -1,0 +1,58 @@
+[
+  {
+    "query": "What premium does a farmer pay for Kharif crops under PMFBY?",
+    "answer": "The indexed official sources state:\n- For Kharif food-grain and oilseed crops, the farmer's maximum premium is 2.0% of the sum insured or the actuarial rate, whichever is lower. [1]\nVerify current eligibility, amounts, deadlines, and application steps on the linked official portal before acting.",
+    "citations": [
+      {
+        "id": 1,
+        "source_id": "pmfby",
+        "title": "Pradhan Mantri Fasal Bima Yojana Revised Operational Guidelines",
+        "publisher": "Ministry of Agriculture and Farmers Welfare, Government of India",
+        "page": 18,
+        "url": "https://pmfby.gov.in/pdf/Revised_Operational_Guidelines.pdf"
+      }
+    ]
+  },
+  {
+    "query": "How often does a farmer receive a Soil Health Card?",
+    "answer": "The indexed official sources state:\n- It will be made available once in a cycle of 3 years, which will indicate the status of soil health of a farmer’s holding for that particular period. [1]\n- The SHC given in the next cycle of 3 years will be able to record the changes in the soil health for that subsequent period. [1]\nVerify current eligibility, amounts, deadlines, and application steps on the linked official portal before acting.",
+    "citations": [
+      {
+        "id": 1,
+        "source_id": "soil_health_frequency",
+        "title": "Soil Health Card FAQ: issue cycle",
+        "publisher": "Department of Agriculture and Farmers Welfare, Government of India",
+        "page": null,
+        "url": "https://support.soilhealth.dac.gov.in/kb/faq.php?id=40"
+      }
+    ]
+  },
+  {
+    "query": "mandi me online bechne ke liye eNAM kya hai?",
+    "answer": "The indexed official sources state:\n- e-NAM platform promotes better marketing opportunities for the farmers to sell their produce through online competitive and transparent price discovery system and online payment facility. [1]\nVerify current eligibility, amounts, deadlines, and application steps on the linked official portal before acting.",
+    "citations": [
+      {
+        "id": 1,
+        "source_id": "enam",
+        "title": "National Agriculture Market (e-NAM): One Nation One Market explainer",
+        "publisher": "Press Information Bureau, Ministry of Agriculture and Farmers Welfare",
+        "page": 1,
+        "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2023/apr/doc2023414181301.pdf"
+      }
+    ]
+  },
+  {
+    "query": "What is the purpose of a Kisan Credit Card?",
+    "answer": "The indexed official sources state:\n- The Kisan Credit Card scheme aims at providing adequate and timely credit support from the banking system under a single window with flexible and simplified procedure to the farmers for their cultivation and other needs as indicated below: [1]\nVerify current eligibility, amounts, deadlines, and application steps on the linked official portal before acting.",
+    "citations": [
+      {
+        "id": 1,
+        "source_id": "kcc",
+        "title": "Master Circular - Kisan Credit Card Scheme",
+        "publisher": "Reserve Bank of India",
+        "page": null,
+        "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=11325"
+      }
+    ]
+  }
+]

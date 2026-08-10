@@ -1,0 +1,280 @@
+{
+  "question_count": 18,
+  "hit_at_1": 1.0,
+  "hit_at_3": 1.0,
+  "mean_reciprocal_rank": 1.0,
+  "mean_expected_term_coverage_at_3": 0.9722222222222222,
+  "all_answers_have_citations": true,
+  "results": [
+    {
+      "id": "q01",
+      "query": "What financial benefit is provided under PM-KISAN?",
+      "expected_source": "pm_kisan",
+      "retrieved_sources": [
+        "pm_kisan",
+        "pm_kisan",
+        "pm_kisan",
+        "pm_kisan",
+        "pm_kisan"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 2
+    },
+    {
+      "id": "q02",
+      "query": "Who identifies eligible farmer families for PM-KISAN?",
+      "expected_source": "pm_kisan",
+      "retrieved_sources": [
+        "pm_kisan",
+        "pm_kisan",
+        "pm_kisan",
+        "pm_kisan",
+        "pm_kisan"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 1
+    },
+    {
+      "id": "q03",
+      "query": "How is PM-KISAN money transferred to beneficiaries?",
+      "expected_source": "pm_kisan",
+      "retrieved_sources": [
+        "pm_kisan",
+        "pm_kisan",
+        "pm_kisan",
+        "pm_kisan",
+        "pm_kisan"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 1
+    },
+    {
+      "id": "q04",
+      "query": "What premium does a farmer pay for Kharif crops under PMFBY?",
+      "expected_source": "pmfby",
+      "retrieved_sources": [
+        "pmfby",
+        "pmfby",
+        "pmfby",
+        "pmfby",
+        "pmfby"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 1
+    },
+    {
+      "id": "q05",
+      "query": "Which risks or crop losses are covered by PMFBY?",
+      "expected_source": "pmfby",
+      "retrieved_sources": [
+        "pmfby",
+        "pmfby",
+        "pmfby",
+        "pmfby",
+        "pmfby"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 2
+    },
+    {
+      "id": "q06",
+      "query": "How should a farmer report a localised crop loss under crop insurance?",
+      "expected_source": "pmfby",
+      "retrieved_sources": [
+        "pmfby",
+        "pmfby",
+        "pmfby",
+        "pmfby",
+        "pmfby"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 1
+    },
+    {
+      "id": "q07",
+      "query": "How often does a farmer receive a Soil Health Card?",
+      "expected_source": "soil_health_frequency",
+      "retrieved_sources": [
+        "soil_health_frequency",
+        "soil_health_sampling",
+        "soil_health_parameters",
+        "pm_kisan",
+        "kcc"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 1
+    },
+    {
+      "id": "q08",
+      "query": "Which soil parameters are shown on a Soil Health Card?",
+      "expected_source": "soil_health_parameters",
+      "retrieved_sources": [
+        "soil_health_parameters",
+        "soil_health_frequency",
+        "soil_health_sampling",
+        "pmfby",
+        "pmfby"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 1
+    },
+    {
+      "id": "q09",
+      "query": "How are soil samples collected from a farmer's field?",
+      "expected_source": "soil_health_sampling",
+      "retrieved_sources": [
+        "soil_health_sampling",
+        "soil_health_frequency",
+        "soil_health_parameters",
+        "pmfby",
+        "pmfby"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 1
+    },
+    {
+      "id": "q10",
+      "query": "How does e-NAM connect agricultural mandis into a national market?",
+      "expected_source": "enam",
+      "retrieved_sources": [
+        "enam",
+        "enam",
+        "enam",
+        "enam",
+        "enam"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 1
+    },
+    {
+      "id": "q11",
+      "query": "Which agency implements the e-NAM scheme?",
+      "expected_source": "enam",
+      "retrieved_sources": [
+        "enam",
+        "enam",
+        "enam",
+        "enam",
+        "enam"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 1
+    },
+    {
+      "id": "q12",
+      "query": "How does transparent e-auction on e-NAM support better price discovery?",
+      "expected_source": "enam",
+      "retrieved_sources": [
+        "enam",
+        "enam",
+        "enam",
+        "enam",
+        "enam"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 2
+    },
+    {
+      "id": "q13",
+      "query": "What is the purpose of a Kisan Credit Card?",
+      "expected_source": "kcc",
+      "retrieved_sources": [
+        "kcc",
+        "kcc",
+        "kcc",
+        "kcc",
+        "kcc"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 1
+    },
+    {
+      "id": "q14",
+      "query": "Which activities can be financed through KCC?",
+      "expected_source": "kcc",
+      "retrieved_sources": [
+        "kcc",
+        "kcc",
+        "kcc",
+        "kcc",
+        "kcc"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 1
+    },
+    {
+      "id": "q15",
+      "query": "Who is eligible for a Kisan Credit Card loan?",
+      "expected_source": "kcc",
+      "retrieved_sources": [
+        "kcc",
+        "kcc",
+        "kcc",
+        "kcc",
+        "kcc"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 0.5,
+      "citation_count": 1
+    },
+    {
+      "id": "q16",
+      "query": "फसल बीमा में खरीफ प्रीमियम कितना है?",
+      "expected_source": "pmfby",
+      "retrieved_sources": [
+        "pmfby",
+        "pmfby",
+        "pmfby",
+        "pmfby",
+        "pmfby"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 2
+    },
+    {
+      "id": "q17",
+      "query": "मिट्टी की जांच वाला कार्ड कितने साल में मिलता है?",
+      "expected_source": "soil_health_frequency",
+      "retrieved_sources": [
+        "soil_health_frequency",
+        "soil_health_sampling",
+        "soil_health_parameters",
+        "kcc",
+        "pm_kisan"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 1
+    },
+    {
+      "id": "q18",
+      "query": "mandi me online bechne ke liye eNAM kya hai?",
+      "expected_source": "enam",
+      "retrieved_sources": [
+        "enam",
+        "enam",
+        "enam",
+        "enam",
+        "enam"
+      ],
+      "expected_source_rank": 1,
+      "term_coverage_at_3": 1.0,
+      "citation_count": 2
+    }
+  ]
+}
