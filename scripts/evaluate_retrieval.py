@@ -1,5 +1,7 @@
 import json
 
+import _project_path  # noqa: F401
+
 from schemeguide.evaluation import evaluate
 from schemeguide.retrieval import HybridRetriever
 

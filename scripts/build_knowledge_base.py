@@ -1,3 +1,5 @@
+import _project_path  # noqa: F401
+
 from schemeguide.ingest import build_corpus
 from schemeguide.retrieval import HybridRetriever
 

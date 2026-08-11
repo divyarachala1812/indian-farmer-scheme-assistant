@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 
+import _project_path  # noqa: F401
+
 from schemeguide.assistant import SchemeAssistant
 from schemeguide.config import REPORTS_DIR
 from schemeguide.retrieval import HybridRetriever
