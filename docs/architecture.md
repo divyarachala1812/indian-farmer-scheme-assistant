@@ -8,7 +8,7 @@ The assistant should help a user find a supported passage quickly while making t
 
 `data/sources/source_manifest.json` is the source registry. Each entry records a stable ID, title, publisher, URL, and document type. The ingestion job downloads each file, computes a SHA-256 digest, and writes a local acquisition manifest.
 
-Raw files and extracted chunks are deliberately ignored by Git. This keeps the repository small and avoids redistributing complete government documents. A reviewer can rebuild the same knowledge base from the versioned source registry.
+Raw files and extracted chunks are deliberately ignored by Git. This keeps the repository small and avoids redistributing complete government documents. The same knowledge base can be rebuilt from the versioned source registry.
 
 ## 2. Extraction and chunking
 

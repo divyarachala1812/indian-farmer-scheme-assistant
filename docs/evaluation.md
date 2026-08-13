@@ -27,7 +27,7 @@ Each question has an expected source ID and two expected evidence terms. The lab
 
 The system retrieves the correct official source first for every declared evaluation question. Expected-term coverage is slightly lower because PDF extraction and chunk boundaries can separate a phrase even when the correct page is retrieved.
 
-The result is useful evidence for this project's scope, but it is not a general benchmark. The questions are small, source-specific, and curated by the project author. A stronger future evaluation would add paraphrases written by independent reviewers, adversarial questions, outdated-policy traps, unanswerable questions, more Indian languages, and graded answer-support judgements.
+The result is useful evidence for this project's scope, but it is not a general benchmark. The questions are small, source specific and curated by the project author. A stronger future evaluation would add independently written paraphrases, adversarial questions, outdated policy traps, unanswerable questions, more Indian languages and graded answer support judgements.
 
 ## Error analysis performed during development
 

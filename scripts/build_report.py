@@ -12,7 +12,6 @@ from reportlab.lib.units import mm
 from reportlab.platypus import (
     PageBreak,
     Paragraph,
-    Preformatted,
     SimpleDocTemplate,
     Spacer,
     Table,
@@ -191,7 +190,7 @@ def decorate_page(pdf_canvas, doc) -> None:
         pdf_canvas.drawString(18 * mm, height - 10.5 * mm, "INDIAN FARMER SCHEME ASSISTANT")
         pdf_canvas.setFillColor(MUTED)
         pdf_canvas.setFont("Helvetica", 8)
-        pdf_canvas.drawString(18 * mm, 11 * mm, "Divya Rachala | Data Science Portfolio")
+        pdf_canvas.drawString(18 * mm, 11 * mm, "Divya Rachala | Applied AI Project")
         pdf_canvas.drawRightString(width - 18 * mm, 11 * mm, f"Page {page} of 10")
     pdf_canvas.restoreState()
 
@@ -210,7 +209,7 @@ def build_report() -> Path:
         bottomMargin=18 * mm,
         title="Indian Farmer Scheme Assistant",
         author="Divya Rachala",
-        subject="Applied AI and information retrieval portfolio project report",
+        subject="Applied AI and information retrieval project report",
     )
     story = []
 
@@ -225,7 +224,7 @@ def build_report() -> Path:
             Spacer(1, 25 * mm),
             report_table(
                 [
-                    ["Portfolio summary", "Verified result"],
+                    ["Project summary", "Verified result"],
                     ["Corpus", "406 chunks from seven official source items"],
                     ["Coverage", "PM-KISAN, PMFBY, Soil Health Card, e-NAM, KCC"],
                     ["Evaluation", "18 questions | Hit@1 1.000 | Citation completeness 100%"],
@@ -253,13 +252,13 @@ def build_report() -> Path:
                         "Balances exact policy phrases and spelling variation",
                     ],
                     ["Extractive answers", "Reduces unsupported paraphrasing of financial rules"],
-                    ["Page-aware citations", "Lets a reviewer inspect the supporting passage"],
+                    ["Page-aware citations", "Keeps the supporting passage inspectable"],
                     ["Mandatory warning", "Reminds users to verify current rules and deadlines"],
                 ],
                 [48 * mm, 100 * mm],
             ),
             Spacer(1, 5 * mm),
-            Paragraph("Portfolio value", H2),
+            Paragraph("Project value", H2),
             *bullets(
                 [
                     "Demonstrates document ingestion, retrieval, evaluation, and safety design.",
@@ -294,8 +293,8 @@ def build_report() -> Path:
             *bullets(
                 [
                     "A farmer or student locating the official source for a scheme question.",
-                    "A reviewer checking how citations and safety controls are implemented.",
-                    "A hiring manager assessing applied NLP and retrieval fundamentals.",
+                    "A project reader checking how citations and safety controls are implemented.",
+                    "A student studying applied NLP and retrieval fundamentals.",
                 ]
             ),
             PageBreak(),
@@ -418,12 +417,16 @@ def build_report() -> Path:
         ]
     )
 
-    answer_text = soil_sample["answer"].replace("\n", "\n")
+    answer_lines = soil_sample["answer"].splitlines()
+    answer_summary = " ".join(
+        line.removeprefix("- ").strip()
+        for line in answer_lines[1:3]
+    )
     story.extend(
         [
             Paragraph("Citation-grounded answer example", H1),
             Paragraph(f"<b>Question:</b> {soil_sample['query']}", BODY),
-            Preformatted(answer_text, CODE),
+            Paragraph(answer_summary, SMALL),
             Spacer(1, 6 * mm),
             report_table(
                 [
@@ -482,7 +485,7 @@ def build_report() -> Path:
 
     story.extend(
         [
-            Paragraph("Reproducibility, evidence, and interview value", H1),
+            Paragraph("Reproducibility and evidence", H1),
             report_table(
                 [
                     ["Step", "Command or artifact"],

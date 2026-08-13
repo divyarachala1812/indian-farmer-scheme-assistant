@@ -17,7 +17,13 @@ A citation-grounded applied AI project for searching official information about 
 
 **Quick navigation:** [Evaluation](#evaluation-result) · [Example](#example) · [Architecture](#architecture) · [Testing](#testing-and-reproducibility) · [PDF report](reports/Indian_Farmer_Scheme_Assistant_Report.pdf)
 
-## Why this is an AI project
+## Problem, root cause and purpose
+
+Official farmer scheme information is spread across ministry PDFs, programme pages, FAQs and circulars. A normal web search can return an outdated summary without showing the supporting passage. The root cause is not the absence of information, but the difficulty of locating the right official section and keeping its source visible.
+
+I built this project to retrieve short evidence from a declared official source collection and return page aware citations. It helps a user navigate documents while keeping eligibility, amounts, deadlines and application decisions outside the system.
+
+## Retrieval approach
 
 The project is not a keyword lookup and does not hard-code answers. It builds a knowledge base from public documents, chunks the text, learns word- and character-level TF-IDF representations, combines two similarity spaces, expands common Hindi and Hinglish scheme terms, ranks evidence, and composes an answer from the most relevant supported sentences.
 
@@ -49,7 +55,7 @@ The curated test set contains 18 questions across all five topics, including two
 
 ![Retrieval evaluation across the declared test set](reports/figures/retrieval_evaluation.svg)
 
-These results measure retrieval on a small declared portfolio test set. They do not prove that the assistant can answer every farmer-scheme question, understand every Indian language, or provide current eligibility advice.
+These results measure retrieval on a small declared test set. They do not prove that the assistant can answer every farmer scheme question, understand every Indian language, or provide current eligibility advice.
 
 ## Example
 
@@ -140,7 +146,7 @@ src/schemeguide/       Ingestion, retrieval, answer, evaluation, and CLI package
 tests/                 Helper and repository contract tests
 ```
 
-The [illustrated project report (PDF)](reports/Indian_Farmer_Scheme_Assistant_Report.pdf) explains the problem, official-source provenance, retrieval design, evaluation, example answer, safety boundary, and reproduction steps in a hiring-manager-friendly format.
+The [illustrated project report (PDF)](reports/Indian_Farmer_Scheme_Assistant_Report.pdf) explains the problem, official source provenance, retrieval design, evaluation, example answer, safety boundary and reproduction steps.
 
 ## What the project demonstrates
 
