@@ -1,8 +1,8 @@
-# Indian Farmer Scheme Assistant
+# KrishiGuide Scheme Assistant
 
 A citation-grounded applied AI project for searching official information about major Indian farmer programmes. The assistant retrieves evidence from PM-KISAN, PMFBY, Soil Health Card, e-NAM, and RBI Kisan Credit Card sources, then assembles a short extractive answer with page-aware citations.
 
-[![CI](https://github.com/divyarachala1812/indian-farmer-scheme-assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/divyarachala1812/indian-farmer-scheme-assistant/actions/workflows/ci.yml)
+[![CI](https://github.com/divyarachala1812/krishiguide-scheme-assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/divyarachala1812/krishiguide-scheme-assistant/actions/workflows/ci.yml)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776ab)](pyproject.toml)
 [![Evaluation](https://img.shields.io/badge/Hit%401-1.000-2a9d8f)](reports/retrieval_evaluation.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-f4a261)](LICENSE)
@@ -15,7 +15,7 @@ A citation-grounded applied AI project for searching official information about 
 | Interface | Command line and versioned evaluation outputs |
 | Knowledge base | 406 chunks from seven official source items |
 
-**Quick navigation:** [Evaluation](#evaluation-result) · [Example](#example) · [Architecture](#architecture) · [Testing](#testing-and-reproducibility) · [PDF report](reports/Indian_Farmer_Scheme_Assistant_Report.pdf)
+**Quick navigation:** [Evaluation](#evaluation-result) · [Example](#example) · [Architecture](#architecture) · [Testing](#testing-and-reproducibility) · [PDF report](reports/KrishiGuide_Scheme_Assistant_Report.pdf)
 
 ## Problem, root cause and purpose
 
@@ -54,6 +54,8 @@ The curated test set contains 18 questions across all five topics, including two
 | Answers with at least one citation | **100%** |
 
 ![Retrieval evaluation across the declared test set](reports/figures/retrieval_evaluation.svg)
+
+The report includes five separate experiments covering aggregate retrieval, question-level term coverage, source coverage, citation completeness, and Hindi or Hinglish stress checks.
 
 These results measure retrieval on a small declared test set. They do not prove that the assistant can answer every farmer scheme question, understand every Indian language, or provide current eligibility advice.
 
@@ -146,7 +148,7 @@ src/schemeguide/       Ingestion, retrieval, answer, evaluation, and CLI package
 tests/                 Helper and repository contract tests
 ```
 
-The [illustrated project report (PDF)](reports/Indian_Farmer_Scheme_Assistant_Report.pdf) explains the problem, official source provenance, retrieval design, evaluation, example answer, safety boundary and reproduction steps.
+The [research-style project report (PDF)](reports/KrishiGuide_Scheme_Assistant_Report.pdf) explains the abstract, problem, official source provenance, retrieval design, five experiments, safety boundary, limitations and conclusion.
 
 ## What the project demonstrates
 

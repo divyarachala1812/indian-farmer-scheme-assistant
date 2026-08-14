@@ -10,7 +10,7 @@ def test_required_portfolio_assets_exist() -> None:
         "docs/evaluation.md",
         "docs/safety.md",
         "reports/figures/retrieval_evaluation.svg",
-        "reports/Indian_Farmer_Scheme_Assistant_Report.pdf",
+        "reports/KrishiGuide_Scheme_Assistant_Report.pdf",
         "reports/retrieval_evaluation.json",
         "reports/sample_answers.json",
         "scripts/create_readme_figure.py",

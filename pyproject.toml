@@ -1,5 +1,5 @@
 [project]
-name = "indian-farmer-scheme-assistant"
+name = "krishiguide-scheme-assistant"
 version = "1.0.0"
 description = "Citation-grounded retrieval assistant for Indian farmer schemes"
 readme = "README.md"
@@ -16,6 +16,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+  "pillow>=11.0,<13.0",
   "pytest>=8.3",
   "reportlab>=4.4,<5.0",
   "ruff>=0.9",
