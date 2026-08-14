@@ -198,6 +198,53 @@ def rank_and_language(metrics: dict) -> None:
     save(image, "05_rank_language_checks.png")
 
 
+def architecture() -> None:
+    image, draw = canvas(
+        "KrishiGuide end-to-end retrieval architecture",
+        "Every answer can be traced from an official source item to a cited passage",
+    )
+    stages = [
+        ("SOURCES", "Official PDF / HTML", "checksums retained"),
+        ("INGEST", "Python extractors", "page-aware chunks"),
+        ("INDEX", "BM25 + term rules", "406 searchable chunks"),
+        ("RETRIEVE", "Hybrid ranking", "top evidence passages"),
+        ("ANSWER", "Bounded template", "citation and limits"),
+    ]
+    box_width, gap, left, top = 245, 48, 90, 300
+    for index, (stage, technology, detail) in enumerate(stages):
+        x = left + index * (box_width + gap)
+        draw.rounded_rectangle((x, top, x + box_width, top + 250), radius=24, fill="white", outline=BLACK, width=3)
+        draw.text((x + box_width / 2, top + 48), stage, anchor="mm", fill=BLACK, font=font(24, True))
+        draw.text((x + box_width / 2, top + 120), technology, anchor="mm", fill=BLACK, font=font(19, True))
+        draw.text((x + box_width / 2, top + 184), detail, anchor="mm", fill=GREY, font=font(17))
+        if index < len(stages) - 1:
+            draw.line((x + box_width + 8, top + 125, x + box_width + gap - 12, top + 125), fill=BLACK, width=4)
+            draw.polygon([(x + box_width + gap - 12, top + 125), (x + box_width + gap - 28, top + 115), (x + box_width + gap - 28, top + 135)], fill=BLACK)
+    draw.text((90, 700), "Official source -> page-aware evidence -> ranked passages -> short cited answer", fill=BLACK, font=font(25, True))
+    save(image, "06_architecture.png")
+
+
+def test_execution() -> None:
+    image = Image.new("RGB", (WIDTH, HEIGHT), "#171717")
+    draw = ImageDraw.Draw(image)
+    draw.text((90, 65), "Actual retrieval test execution", fill="white", font=font(42, True))
+    draw.line((90, 145, WIDTH - 90, 145), fill="#d0d0d0", width=2)
+    lines = [
+        "$ .venv/bin/pytest -q",
+        "tests/test_answer.py ...",
+        "tests/test_project_contract.py .",
+        "tests/test_retrieval.py ..",
+        "",
+        "6 passed in 1.60s",
+        "",
+        "Checks: citation formatting, source ranking, empty query handling,",
+        "required report assets and declared answer boundaries.",
+    ]
+    for index, line in enumerate(lines):
+        draw.text((110, 215 + index * 62), line, fill="white" if index < 6 else "#d0d0d0", font=font(25 if index < 6 else 22))
+    save(image, "07_test_execution.png")
+
+
 def main() -> None:
     metrics = json.loads((ROOT / "reports" / "retrieval_evaluation.json").read_text())
     overall_metrics(metrics)
@@ -205,7 +252,9 @@ def main() -> None:
     source_test_distribution(metrics)
     citation_counts(metrics)
     rank_and_language(metrics)
-    print("Wrote five evaluation figures")
+    architecture()
+    test_execution()
+    print("Wrote seven evaluation figures")
 
 
 if __name__ == "__main__":

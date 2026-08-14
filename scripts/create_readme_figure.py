@@ -54,7 +54,7 @@ def main() -> None:
   <text x="80" y="112" class="subtitle">18 questions · 5 scheme areas · 406 indexed chunks</text>
   <line x1="80" y1="540" x2="1200" y2="540" stroke="#799792" stroke-width="2"/>
   {"".join(bars)}
-  <text x="80" y="660" class="note">Curated portfolio test set; results do not establish general question-answering accuracy.</text>
+  <text x="80" y="660" class="note">Curated project test set; results do not establish general question answering accuracy.</text>
 </svg>
 """
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)

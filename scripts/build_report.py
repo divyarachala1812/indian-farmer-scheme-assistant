@@ -6,7 +6,7 @@ from pathlib import Path
 from report_template import build_research_report
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "reports" / "KrishiGuide_Scheme_Assistant_Report.pdf"
+OUTPUT = ROOT / "reports" / "KrishiGuide_Report.pdf"
 FIGURES = ROOT / "reports" / "figures"
 
 
@@ -47,6 +47,34 @@ def build_report() -> Path:
             "paragraphs": [
                 "The declared test set contains 18 inspectable questions: three each for PM-KISAN, PMFBY, Soil Health Card, e-NAM, and Kisan Credit Card, plus two Hindi questions and one Hinglish question that repeat important intents.",
                 "Each question specifies an expected source and two expected evidence terms. I measure Hit@1, Hit@3, mean reciprocal rank, expected-term coverage in the top three chunks, and citation completeness. This is a curated project test, not a general benchmark.",
+            ],
+        },
+        {
+            "title": "End-to-end retrieval architecture",
+            "paragraphs": [
+                "The architecture keeps official-source acquisition, page-aware ingestion, indexing, retrieval and answer construction as separate stages. Each source item retains its URL, checksum and page metadata before it enters the searchable index.",
+                "Python extractors create 406 chunks. Word and character retrieval identify evidence passages, while the bounded answer step selects short statements and attaches the originating source and page. The answer stage cannot create a citation that was not present in retrieved evidence.",
+            ],
+            "figure": FIGURES / "06_architecture.png",
+            "caption": "Architecture evidence. KrishiGuide source, index, retrieval and citation stages.",
+            "explanation": [
+                ["Technology flow", "Official PDF and HTML sources pass through Python extraction, hybrid ranking and a bounded citation template."],
+                ["Traceability", "Every returned statement is connected to a source item and page-aware chunk."],
+                ["Safety boundary", "Eligibility, deadlines and application decisions remain outside the assistant and require current official confirmation."],
+            ],
+        },
+        {
+            "title": "Automated retrieval test execution",
+            "paragraphs": [
+                "I ran the current repository test suite after the report update. Six tests passed. The tests cover citation formatting, source ranking, empty-query handling, answer boundaries and required project assets.",
+                "The automated suite is different from the 18-question retrieval evaluation. Unit tests verify software contracts, while Hit@1, term coverage and citation completeness measure the declared information-retrieval scenarios.",
+            ],
+            "figure": FIGURES / "07_test_execution.png",
+            "caption": "Test evidence. Actual KrishiGuide pytest execution for retrieval and answer contracts.",
+            "explanation": [
+                ["Execution", "Six tests passed in 1.60 seconds and no test failed."],
+                ["Negative scenario", "An empty or unsupported query must return a safe bounded response instead of invented scheme detail."],
+                ["Combined evidence", "The unit suite and 18-question evaluation address different risks and are reported separately."],
             ],
         },
         {

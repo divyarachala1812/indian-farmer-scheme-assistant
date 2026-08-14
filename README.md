@@ -15,7 +15,7 @@ A citation-grounded applied AI project for searching official information about 
 | Interface | Command line and versioned evaluation outputs |
 | Knowledge base | 406 chunks from seven official source items |
 
-**Quick navigation:** [Evaluation](#evaluation-result) · [Example](#example) · [Architecture](#architecture) · [Testing](#testing-and-reproducibility) · [PDF report](reports/KrishiGuide_Scheme_Assistant_Report.pdf)
+**Quick navigation:** [Evaluation](#evaluation-result) · [Example](#example) · [Architecture](#architecture) · [Testing](#testing-and-reproducibility) · [PDF report](reports/KrishiGuide_Report.pdf)
 
 ## Problem, root cause and purpose
 
@@ -148,7 +148,7 @@ src/schemeguide/       Ingestion, retrieval, answer, evaluation, and CLI package
 tests/                 Helper and repository contract tests
 ```
 
-The [research-style project report (PDF)](reports/KrishiGuide_Scheme_Assistant_Report.pdf) explains the abstract, problem, official source provenance, retrieval design, five experiments, safety boundary, limitations and conclusion.
+The [project report](reports/KrishiGuide_Report.pdf) documents the problem, official source provenance, retrieval design, five experiments, safety boundary, limitations and conclusion.
 
 ## What the project demonstrates
 
@@ -164,7 +164,7 @@ The [research-style project report (PDF)](reports/KrishiGuide_Scheme_Assistant_R
 
 ## Safety boundary
 
-This assistant is an educational navigation tool. It does not decide eligibility, submit applications, recommend loans or insurance, interpret law, or replace the latest scheme portal. Government programmes change; every answer ends with a reminder to verify current amounts, dates, and rules at the cited official source.
+This assistant is an informational navigation tool. It does not decide eligibility, submit applications, recommend loans or insurance, interpret law, or replace the latest scheme portal. Government programmes change; every answer ends with a reminder to verify current amounts, dates, and rules at the cited official source.
 
 ## Licence
 

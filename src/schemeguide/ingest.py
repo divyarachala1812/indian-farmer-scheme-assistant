@@ -41,7 +41,7 @@ def _download(source: Source) -> tuple[Path, str]:
     response = requests.get(
         source.url,
         timeout=180,
-        headers={"User-Agent": "Mozilla/5.0 (compatible; portfolio-research/1.0)"},
+        headers={"User-Agent": "Mozilla/5.0 (compatible; schemeguide-research/1.0)"},
     )
     response.raise_for_status()
     path.write_bytes(response.content)
